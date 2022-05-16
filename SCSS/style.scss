@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/*index*/
+@import 'header';
+@import 'exclusives';
+@import 'trending';
+@import 'cta';
+@import 'stories';
+@import 'about-msg';
+@import 'footer';
+
+/*listing*/
+@import 'list-container';
+@import 'navbar-white';
+@import 'pagination';
+
+/*house*/
+@import 'house-details';
+
+@import 'media-query-index';
+@import 'media-query-listing';
+@import 'media-query-house';
+
+
+
+

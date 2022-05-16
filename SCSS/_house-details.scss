@@ -1,0 +1,238 @@
+.house-details
+{
+    padding: 0 10%;
+}
+
+.house-title
+{
+    margin-top: 50px;
+
+    h1 
+    {
+        font-weight: 600;
+    }
+
+    .row 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    span 
+    {
+        margin: 0 20px;
+    }
+
+    i 
+    {
+        color: #ff5361;
+        font-size: 14px;
+    }
+}
+
+.gallery 
+{
+    display: grid;
+    grid-gap: 10px;
+    /*
+
+    (da inserire a livello di contenitore) 
+    La proprietà grid-template-areas ci permette di definire un valore tra singoli apici che corrisponde al valore
+    della proprietà grid-area dell' elemento del contenitore.
+
+    Il singolo apici rappresenta una riga, il valore rappresenta la posizione della colonna occupata i . rappresentano
+    le posizioni degli altri elementi del contenitore.
+
+    es: 
+    il contenitore ha 5 elementi come valore della proprietà grid-template-areas: abbiamo: 'first first . .'
+    che significa che l' elemento che possiede first come valore della proprietà grid-area occuperà la prima e la seconda
+    colonna della riga mentre le altre due colonne sulla stessa riga verranno occupate dagli altri elementi del contenitore
+    
+    Possiamo specificare più righe inserendo altri singoli apici separati da uno spazio dai precedenti.
+
+    */
+    grid-template-areas: 'first first . .' 'first first . .';
+    margin: 20px 0;
+}
+
+.gallery div img 
+{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.gallery-img-1
+{
+    grid-area: first;
+}
+
+.small-details h2
+{
+    font-weight: 500;
+}
+
+.small-details h4
+{
+    text-align: right;
+    font-size: 22px;
+}
+
+.line
+{
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0 50px;
+}
+
+.check-form
+{
+    margin: 30px 0;
+    background-color: #fff;
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 50px;
+
+    label 
+    {
+        display: block;
+    }
+
+    div 
+    {
+        padding: 0px;
+    }
+
+    input 
+    {
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        width: 50%;
+    }
+
+    button 
+    {
+        background-color: #ff5361;
+        border: 0;
+        outline: none;
+        color: #fff;
+        padding: 10px;
+        width: 300;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+}
+
+.guest-field
+{
+    flex: 1;
+}
+
+.details-list
+{
+    list-style-type: none;
+    margin: 50px 0;
+
+    li 
+    {
+        margin-left: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color: #555;
+        position: relative;
+
+        span 
+        {
+            display: block;
+            font-weight: 400;
+            font-size: 12px;
+        }
+
+        i 
+        {
+            position: absolute;
+            top: 5px;
+            left: -40px;
+        }
+    }
+}
+
+.home-description
+{
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.map 
+{
+    margin: 50px 0;
+
+    iframe 
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    h3 
+    {
+        font-size: 26px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    b 
+    {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    p 
+    {
+        font-style: italic;
+    }
+}
+
+.host 
+{
+    display: flex;
+    align-items: center;
+
+    img 
+    {
+        width: 80px;
+        border-radius: 50%;
+        margin-right: 30px;
+    }
+
+    h2 
+    {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    i 
+    {
+        color: #ff5361;
+    }
+}
+
+.contact-host 
+{
+    display: inline-block;
+    margin: 40px 0 40px 120px;
+    text-decoration: none;
+    color: #555;
+    padding: 15px 30px;
+    border: 1px solid #ff5361;
+    border-radius: 5px;
+}

@@ -1,0 +1,35 @@
+.pagination
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+
+    img 
+    {
+        width: 15px;
+        margin: 10px 20px;
+    }
+
+    span 
+    {
+        margin: 10px 5px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .current
+    {
+        background-color: #333;
+        color: #fff;
+    }
+}
+
+.right-arrow
+{
+    transform: rotate(180deg);
+}
